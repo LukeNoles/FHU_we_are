@@ -1,0 +1,171 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(86, 86, 86);
+    text-align: center;
+    color: white;
+}
+
+.heading {
+    background: rgb(53, 53, 53);
+    font-size: 200%;
+    color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.banner {
+    position: absolute;
+    background-color: rgb(53, 53, 53);
+    height: 250px;
+    width: 20%;
+    top: 0%;
+    left: 40%;
+    z-index: -1;
+    border-radius: 40%;
+}
+
+.banner img {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    font-size: 200%;
+    color: white;
+}
+
+.we_are {
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 2px;
+}
+
+
+
+.card1 {
+    background:linear-gradient(to top left,gold 50%,maroon 50%);
+    color: rgb(224, 224, 224);
+    display: flex;
+    margin: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card2 {
+    background:linear-gradient(to top right,gold 50%,maroon 50%);
+    color: rgb(224, 224, 224);
+    display: flex;
+    margin: 30px;
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+}
+
+.card3 {
+    background:linear-gradient(to top left,gold 50%,maroon 50%);
+    color: rgb(224, 224, 224);
+    display: flex;
+    margin: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: end;
+    border-radius: 5px;
+}
+
+.info {
+    margin: 20px;
+}
+
+.info2 {
+    margin: 20px;
+}
+
+.info3 {
+    margin: 20px;
+}
+
+.card1 img {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.card2 img {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.card3 img {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5px;    
+    z-index: 2;
+}
+
+@media(max-width: 1150px) {
+    .we_are {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2px;
+    }
+    .card1 {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .card2 {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .card3 {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 3;
+        grid-row-end: end;
+    }
+}
+
+@media(max-width: 750px) {
+    .header {
+        font-size: 150%;
+        color: white;
+    }
+    .card1 img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .card2 img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .card3 img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
